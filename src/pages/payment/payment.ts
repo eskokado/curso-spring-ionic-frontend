@@ -31,9 +31,7 @@ export class PaymentPage {
 
   nextPage() {
     this.pedido.pagamento = this.formGroup.value;
-    if (this.pedido.pagamento["@type"] == "pagamentoComBoleto") {
-      this.pedido.pagamento.numeroDeParcelas = 1;
-    }
+    this.navCtrl.setRoot('OrderConfirmationPage', {pedido: this.pedido});
     console.log(this.pedido);
   }
 
