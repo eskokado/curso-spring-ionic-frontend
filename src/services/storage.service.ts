@@ -1,7 +1,6 @@
 import { Injectable } from "@angular/core";
 import { LocalUser } from "../models/local_users";
 import { STORAGE_KEYS } from "../config/storage_keys.config";
-import { nullSafeIsEquivalent } from "@angular/compiler/src/output/output_ast";
 import { Cart } from "../models/cart";
 
 @Injectable()
